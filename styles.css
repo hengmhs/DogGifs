@@ -1,0 +1,45 @@
+#container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#content {
+    background-color: beige;
+    padding: 1em;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+p {
+    color: darkgrey;
+    margin-top: 0.5em;
+}
+
+body {
+    font-family: 'Franklin Gothic Light', 'Arial Narrow', Arial, sans-serif;
+    background-image: url('./background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#error {
+    color: darkred;
+}
+
+#newDog {
+    background-color: darksalmon;
+    text-align: center;
+    font-size: 1.5em;
+    width: 40%;
+    margin: auto;
+}
+
+#newDog:hover {
+    background-color: salmon; 
+}
