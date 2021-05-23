@@ -1,7 +1,10 @@
-# Project: Tic-Tac-Toe
+# Project: Working with APIs
 
-The Odin Project assignment to create a Tic-Tac-Toe game.
+The Odin Project assignment to use the GIPHY API.
+
+The API_KEY is in API_KEY.js which is not tracked by Git.
 
 ## Learning Points:
 
-1. Modules
+1. fetch() and using API keys
+2. Promises
