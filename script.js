@@ -2,18 +2,15 @@ const img = document.querySelector('img');
 const errorStatus = document.querySelector('#error');
 const newDogBtn = document.querySelector('#newDog')
 
-const newDogGif = () => {
-  fetch(API_KEY, {mode: 'cors'})
-  .then((response) => {
-	  errorStatus.innerHTML = '';
-	  return response.json();
-  })
-  .then((response) => {
+const newDogGif = async () => {
+  const response = await fetch(API_KEY, {mode: 'cors'});
+  response.json().then((response) => {
+    errorStatus.innerHTML = '';
 	  img.src = response.data.images.original.url;
-  })
-  .catch((response) => {
+  });
+  /*.catch((response) => {
 	  errorStatus.innerHTML = 'Error: No Gif Found!';
-  })
+  })*/
 }
 
 newDogGif();

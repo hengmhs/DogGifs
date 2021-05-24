@@ -8,3 +8,4 @@ The API_KEY is in API_KEY.js which is not tracked by Git.
 
 1. fetch() and using API keys
 2. Promises
+3. Async & Await
